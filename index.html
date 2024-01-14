@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="main.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
-
     <script>
         tailwind.config = {
             theme: {
@@ -28,7 +28,6 @@
             },
         }
     </script>
-    
     <title>Document</title>
 </head>
 <body>
@@ -90,13 +89,55 @@
                 <button class="px-5 py-[0.6rem] font-mullish text-white  border-r-lightBlue500 border-t-lightBlue500 border rounded-sm font-bold text-sm ">Log In</button>
 
 
-                <button class="bg-white text-lightBlue300 px-3 border rounded-sm text-center hover:text-lightBlue500 text-sm font-bold">Sign Up
-                    <img src="./assets/" alt="">
+                <button class="bg-white text-lightBlue300 px-3 border rounded-sm text-center hover:text-lightBlue500 text-sm font-bold flex items-center justify-around">
+                    Sign Up
+                    <svg
+                    viewBox="0 0 24 24"
+                    focusable="false"
+                    class="w-[14px] h-[14px] ml-3"
+                    >
+                    <path
+                    fill="currentColor"
+                    d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                    >
+                    </path>
+              </svg>
                 </button>
             </div>
         </div>
-
     </nav>
     
+    <!-- Hero Section -->
+
+    <section class="relative bg-deepBlue mx-auto">
+
+        <div class=" w-10/12 max-w-[1000px] flex flex-row  items-center justify-between mx-auto">
+
+            <!-- left part -->
+            <div class="text-white space-y-8">
+                <h1 class="font-mullish text-[40px] leading-[1.2] font-bold">
+                    Power your finance, grow your business
+                </h1>
+
+                <div class="h-1 bg-white w-5"></div>
+
+                <p class="font-mullish opacity-85 text-[18px] leading-7 text-white">
+                    Accept payments from customers. Automate payouts to vendors. Never run out of working capital.
+                </p>
+
+                <button class="bg-lightBlue300
+                h-10 w-[110px] text-sm rounded font-semibold hover:bg-lightBlue500">
+                    Sign Up Now
+                </button>
+            </div>
+
+            <img src="./assets/hero-illustration.jpg" alt="" class="w-full max-w-[610px]">
+        </div>
+
+        <div class="absolute left-0 right-0">
+            <img src="./assets/hero-shape.svg" alt="" class="w-full  overflow-hidden">
+        </div>
+    </section>
+
 </body>
 </html>
